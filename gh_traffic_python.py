@@ -174,9 +174,7 @@ def main(username):
     :return:
     """
     username = username.strip()
-    #token_file = open('token.txt')
-    pw =$GH_CLONE_SCRAPPER_TOKEN#token_file.readline()
-    auth_pair = (username, pw.rstrip())
+    auth_pair = (username,os.environ['GH_CLONE_SCRAPPER_TOKEN'])
     traffic_headers = {'Accept': 'application/vnd.github.spiderman-preview'}
 
     save_txt = 'save_txt'
