@@ -6,5 +6,5 @@ install:
   - pip install -r requirements.txt
 # command to run tests
 script:
-  - python gh_traffic_python.py # or py.test for Python versions 3.5 and below
+  - python gh_traffic_python.py dsambit # or py.test for Python versions 3.5 and below
 
