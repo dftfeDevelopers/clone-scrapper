@@ -175,7 +175,7 @@ def main(username):
     """
     username = username.strip()
     #token_file = open('token.txt')
-    pw =$GH_CLONE_SCRAPPER_TOKEN)#token_file.readline()
+    pw =$GH_CLONE_SCRAPPER_TOKEN#token_file.readline()
     auth_pair = (username, pw.rstrip())
     traffic_headers = {'Accept': 'application/vnd.github.spiderman-preview'}
 
