@@ -7,4 +7,7 @@ install:
 # command to run tests
 script:
   - python gh_traffic_python.py dsambit # or py.test for Python versions 3.5 and below
+  - git add .
+  - git commit --message "Updated github_stats.txt"
+  - git push origin clone-scrapper
 
