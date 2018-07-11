@@ -10,6 +10,6 @@ script:
   - git add .
   - git commit -a -m "add file"
   - git remote add origin-upload https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe> /dev/null 2>&1
-  - git push --quiet --set-upstream origin-upload clone-scrapper 
+  - git push origin-upload clone-scrapper 
   
 
