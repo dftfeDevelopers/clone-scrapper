@@ -7,10 +7,12 @@ install:
 # command to run tests
 script:
   - python gh_traffic_python.py dsambit # or py.test for Python versions 3.5 and below
+  
+after_success:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git add .
-  - git commit -a -m "add file"
+  - git commit --message "add file"
   - git remote add origin-upload https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe> /dev/null 2>&1
   - git push origin-upload clone-scrapper 
   
