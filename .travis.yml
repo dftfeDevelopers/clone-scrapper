@@ -8,6 +8,6 @@ install:
 script:
   - python gh_traffic_python.py dsambit # or py.test for Python versions 3.5 and below
   - git add .
-  - git commit -a --m "Updated github_stats.txt"
+  - git commit -a -m "Updated github_stats.txt"
   - git push "https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe" clone-scrapper
 
