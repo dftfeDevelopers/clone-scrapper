@@ -3,8 +3,8 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - git clone https://github.com/dftfeDevelopers/dftfe dftfeDevelopers/dftfe
-  - cd dftfeDevelopers/dftfe
+  - git clone https://github.com/dftfeDevelopers/clone-scrapper dftfeDevelopers/clone-scrapper
+  - cd dftfeDevelopers/clone-scrapper
   - git checkout clone-scrapper
   - pip install -r requirements.txt
 # command to run tests
@@ -15,7 +15,7 @@ after_success:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
   - git commit -a --message "updated stats file"
-  - git remote add origin-upload https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe> /dev/null 2>&1
+  - git remote add origin-upload https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/clone-scrapper> /dev/null 2>&1
   - git push origin-upload clone-scrapper 
   
 
