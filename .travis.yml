@@ -7,7 +7,13 @@ install:
 # command to run tests
 script:
   - python gh_traffic_python.py dsambit # or py.test for Python versions 3.5 and below
-  - git add .
-  - git commit -a -m "Updated github_stats.txt"
-  - git push "https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe" clone-scrapper
+  
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_CLONE_SCRAPPER_TOKEN
+  keep-history: true
+  on:
+    branch: clone-scrapper
+  
 
