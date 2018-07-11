@@ -14,7 +14,7 @@ script:
 after_success:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
-  - git commit --message "updated stats file"
+  - git commit -a --message "updated stats file"
   - git remote add origin-upload https://${GH_CLONE_SCRAPPER_TOKEN}@github.com/dftfeDevelopers/dftfe> /dev/null 2>&1
   - git push origin-upload clone-scrapper 
   
