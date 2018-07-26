@@ -130,8 +130,8 @@ def write_text_file(repo, json_visits, json_clones, file_name):
 
     utc_date_obj = date.today()
 
-    # Loop over the past 14 days
-    for i in range(-14, 0):
+    # Loop over the past 7 days
+    for i in range(-7, 0):
         target_date = utc_date_obj+timedelta(days=i)
         target_date_str = target_date.strftime('%Y-%m-%dT%H')
         if target_date_str in dates_and_views:
@@ -184,7 +184,7 @@ def main(username):
 
     if save_txt == 'save_txt':
         f = open(file_name, 'a')
-        output_string = "\n--------- \nGitHub statistics for the previous two weeks as of "
+        output_string = "\n--------- \nGitHub statistics for the past week as of "
         output_string = output_string + current_timestamp + ": \n \n"
         f.write(output_string)
         f.close()
