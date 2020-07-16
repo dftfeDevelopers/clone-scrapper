@@ -1859,3 +1859,21 @@ dftfe  Total Statistics:
 		Visits		Unique Visits	Clones		Unique Clones
 		66		24		2		1
 
+
+--------- 
+GitHub statistics for the past week as of 2020-07-16-19h-24m: 
+ 
+dftfe Daily Statistics:
+Date		Visits		Unique Visits	Clones		Unique Clones
+2020-07-09T00	11		5		0		0
+2020-07-10T00	6		3		0		0
+2020-07-11T00	7		3		0		0
+2020-07-12T00	2		2		0		0
+2020-07-13T00	12		3		0		0
+2020-07-14T00	8		4		0		0
+2020-07-15T00	9		1		0		0
+
+dftfe  Total Statistics:
+		Visits		Unique Visits	Clones		Unique Clones
+		55		21		0		0
+
